@@ -7,6 +7,9 @@
 
 typedef int Field[L][L];
 
+void printField(Field);
+void calcNextPlacing(Field, int *, int *);
+
 int verbose = 0;
 
 int main(int argc, char *argv[]) {
