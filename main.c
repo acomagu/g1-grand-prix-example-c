@@ -59,33 +59,33 @@ void printField(Field field) {
     return;
   }
 
-  printf("  ");
+  fprintf(stderr, "  ");
   for(x = 0; x < L; ++x) {
-    printf("%2d", x);
+    fprintf(stderr, "%2d", x);
   }
-  printf("\n");
+  fprintf(stderr, "\n");
 
   for(y = 0; y < L; ++y) {
-    printf("%2d", y);
+    fprintf(stderr, "%2d", y);
     for(x = 0; x < L; ++x) {
       switch(field[y][x]) {
         case EMPTY:
-          printf("  ");
+          fprintf(stderr, "  ");
           break;
         case ME:
-          printf(" o");
+          fprintf(stderr, " o");
           break;
         case OPPONENT:
-          printf(" x");
+          fprintf(stderr, " x");
           break;
       }
     }
-    printf("%2d\n", y);
+    fprintf(stderr, "%2d\n", y);
   }
 
-  printf("  ");
+  fprintf(stderr, "  ");
   for(x = 0; x < L; x++) {
-    printf("%2d", x);
+    fprintf(stderr, "%2d", x);
   }
-  printf("\n");
+  fprintf(stderr, "\n");
 }
