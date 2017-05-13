@@ -41,6 +41,7 @@ int main(int argc, char *argv[]) {
 }
 
 void calcNextPlacing(Field field, int *myY, int *myX) {
+  // Change here!
   int y, x;
   for(y = 0; y < L; ++y) {
     for(x = 0; x < L; ++x) {
